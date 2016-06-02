@@ -1,23 +1,39 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
 
-<div class="home">
+  <title>Playground</title>
+  <meta name="description" content="An HTML/CSS Playground">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <h1 class="page-heading">Posts</h1>
+	<link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+</head>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<body>
+  
+  <div class="container"> 
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <h1>Heading 1</h1>
 
-</div>
+    <p>P: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.</p>
+
+    <h1>H1: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.</h1>
+
+    <h2>H2: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.</h2>
+
+    <h3>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.</h3>
+
+    <h4>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.</h4>
+
+    <p>P: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.</p>
+
+	</div>
+
+  <script src="scripts/js.js"></script>
+
+</body>
+</html>
